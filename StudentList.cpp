@@ -48,7 +48,7 @@ int main(){
       cout << "Total students: " << count << endl;
       
       for (int i=0; i<count; i++) {
-	cout << (*studentList)[i]->first << " "
+	cout << (*studentList)[i]->first << ", "
 	     << (*studentList)[i]->last << ", " 
 	     << (*studentList)[i]->id << ", "
 	     << trunc(100* (*studentList)[i]->gpa) / 100 <<endl;
