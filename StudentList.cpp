@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <iomanip>
 #include <vector>
 #include <string>
 #include <cmath>
@@ -51,7 +52,7 @@ int main(){
 	cout << (*studentList)[i]->first << ", "
 	     << (*studentList)[i]->last << ", " 
 	     << (*studentList)[i]->id << ", "
-	     << trunc(100* (*studentList)[i]->gpa) / 100 <<endl;
+	     << setprecision (2)  << fixed << trunc(100* (*studentList)[i]->gpa) / 100 <<endl;
       }
       
     }
